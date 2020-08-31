@@ -1,0 +1,30 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>House</th>
+      <th>Type</th>
+      <th>Cost</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each estate.houses}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{type}}
+        </td>
+        <td>
+          {{cost}}
+        </td>
+        <td>
+          <a href="/estate/{{../estate.id}}/deletehouse/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

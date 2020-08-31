@@ -1,0 +1,56 @@
+{
+  "estateCollection": [
+    {
+      "id": "e60eb9c0-c813-11ea-8914-c122a0884b92",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Caherlag",
+      "houses": [
+        {
+          "id": "87dd4d70-c814-11ea-aea8-5527bc6f07c6",
+          "title": "Willow",
+          "type": "Bungalow",
+          "cost": 449000
+        },
+        {
+          "id": "9a5cb710-c814-11ea-aea8-5527bc6f07c6",
+          "title": "Yew",
+          "type": "Bungalow",
+          "cost": 435000
+        },
+        {
+          "id": "a20f3c30-c814-11ea-aea8-5527bc6f07c6",
+          "title": "Oak",
+          "type": "Dormer",
+          "cost": 495000
+        }
+      ],
+      "averageCost": 33666.66666666667
+    },
+    {
+      "id": "312d60d0-c839-11ea-bed8-492ec0fd40b2",
+      "userid": "075aaf70-c81a-11ea-8d5d-0b80925fb168",
+      "title": "Redwood",
+      "houses": [
+        {
+          "id": "3f4f63c0-c839-11ea-bed8-492ec0fd40b2",
+          "title": "Beech",
+          "type": "Dormer",
+          "cost": 295000
+        },
+        {
+          "id": "4c9118d0-c839-11ea-bed8-492ec0fd40b2",
+          "title": "Oak",
+          "type": "Bungalow",
+          "cost": 279000
+        },
+        {
+          "id": "61879cf0-c839-11ea-bed8-492ec0fd40b2",
+          "title": "Yew",
+          "type": "Two Story",
+          "cost": 310000
+        }
+      ],
+      "averageCost": 294666.6666666666
+    }
+  ]
+}
