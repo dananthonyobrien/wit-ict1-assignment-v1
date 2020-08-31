@@ -1,0 +1,33 @@
+{{#each estate}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{title}}
+    </h2>
+    
+    <p> Average Cost: {{averageCost}} </p>
+    <table class="ui table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each houses}}
+          <tr>
+            <td>
+              {{title}}
+            </td>
+            <td>
+              {{type}}
+            </td>
+            <td>
+              {{cost}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </section>
+{{/each}}

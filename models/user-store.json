@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "Dan",
+      "lastName": "O'Brien",
+      "email": "dob@g.com",
+      "password": "1234",
+      "id": "e992ae30-c804-11ea-a129-553d09ccbfad"
+    },
+    {
+      "firstName": "Jim",
+      "lastName": "O'Brien",
+      "email": "job@gmail.com",
+      "password": "1234",
+      "id": "075aaf70-c81a-11ea-8d5d-0b80925fb168"
+    },
+    {
+      "firstName": "Dan",
+      "lastName": "O'Brien",
+      "email": "dob@gmail.com",
+      "password": "1234",
+      "id": "903ab860-ca60-11ea-ac34-35026dcd9fe9"
+    },
+    {
+      "firstName": "Joan",
+      "lastName": "O'Brien",
+      "email": "joan@bmail.com",
+      "password": "1234",
+      "id": "366dad70-caaa-11ea-b3a3-5d71d550a58f"
+    },
+    {
+      "firstName": "Tim",
+      "lastName": "Coogan",
+      "email": "tc@gmail.com",
+      "password": "1234",
+      "id": "65150e40-ccbf-11ea-b93a-1ddad389c1c8"
+    },
+    {
+      "firstName": "Jessie",
+      "lastName": "Doyle",
+      "email": "jd@gmail.com",
+      "password": "1234",
+      "id": "7b0c09a0-d70b-11ea-9d28-bf74bb68d04f"
+    },
+    {
+      "firstName": "Dan",
+      "lastName": "Ahern",
+      "email": "da@gmail.com",
+      "password": "1234",
+      "id": "c049c750-e944-11ea-8f3e-37393a3c3956"
+    }
+  ]
+}

@@ -1,2 +1,4 @@
-# wit-ict1-assignment-v1
-July v1 from Glitch. See Webstorm for more recent versions
+Welcome to the Playlist 3
+=========================
+
+Version 3 of the Playlist application

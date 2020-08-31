@@ -1,0 +1,33 @@
+{
+  "buildRequestCollection": [
+    {},
+    {
+      "id": "a3d32d00-d5ee-11ea-91d7-9dfe1721b580",
+      "userid": "075aaf70-c81a-11ea-8d5d-0b80925fb168",
+      "name": "Cherry Wood",
+      "type": "Bungalow",
+      "size": "140",
+      "finish": "l",
+      "garage": "y",
+      "patio": "y",
+      "addinfo": "",
+      "budget": "3000000",
+      "estimatedCost": 406000,
+      "overrun": -1
+    },
+    {
+      "id": "ea68b600-e939-11ea-8ada-47abda9a2e26",
+      "userid": "7b0c09a0-d70b-11ea-9d28-bf74bb68d04f",
+      "name": "No 5",
+      "type": "Bungalow",
+      "size": "400",
+      "finish": "l",
+      "garage": "y",
+      "patio": "y",
+      "addinfo": "Pool",
+      "budget": "800000",
+      "estimatedCost": 1134000,
+      "overrun": 0
+    }
+  ]
+}

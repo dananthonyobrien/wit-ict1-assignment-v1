@@ -1,0 +1,79 @@
+<section class="ui segment">
+  <div class="ui four small statistics">
+    <div class="ui statistic">
+      <div class="value">
+        <i class="user icon"></i>
+      </div>
+      <div class="label">
+        <p>Welcome: </p>
+        
+        {{#with this.users}}
+        <p>{{firstName}}</p>
+        {{/with}}
+     <!--- <script type = "text/x-handlebars-template">          </script> --->
+
+            
+        <p>{{this.user-store.firstName}}</p>
+        <p>{{users.firstName}}</p>
+        <p>{{userStore.firstName}}</p>
+        <p>{{userStore.firstName}}</p>
+        <p>{{accounts.firstName}}</p>
+        <p>{{firstName}}</p>
+        <p>{{firstname}}</p>
+
+
+
+
+       
+
+
+
+  
+      </div>
+    </div>
+    <div class="ui statistic">
+      <div class="value">
+        <i class ="user icon"></i>
+        <p>{{buildRequest.currentCost}}</p>
+        
+        
+        {{#each buildrequest}}
+        <p>{{estimatedCost}}</p>
+        {{/each}}
+      </div>
+    
+      
+      <!---
+      <div class="ui statistic">
+      <div class="value">
+        #if estimatedCost}}
+        <i class="green dashboard icon"></i>
+        {#else }}
+        <i class="red dashboard icon"></i>
+        {/if}}
+      </div>
+--->
+  
+        
+      <div class="label">
+        Current Estimate
+      </div>
+    </div>
+    <div class="ui statistic">
+      <div class="value">
+        <i class="arrow icon"></i> {{buildRequest.percentageChange}}
+      </div>
+      <div class="label">
+        Percentage Change
+      </div>
+    </div>
+    <div class="ui statistic">
+      <div class="value">
+        <i class="tick icon"></i>
+      </div>
+      <div class="label">
+      {{buildRequest.approved}}
+      </div>
+    </div>
+  </div>
+</section>
