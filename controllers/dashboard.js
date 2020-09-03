@@ -2,25 +2,30 @@
 
 const logger = require("../utils/logger");
 const buildRequestStore = require("../models/buildrequest-store");
-const estateStore = require("../models/estate-store");
 const uuid = require("uuid");
 const accounts = require("./accounts.js");
 const userStore = require("../models/user-store");
+const utility = require ("./utility.js");
+let currentEstimate;
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
+    //const user = userStore.getUserById(request.params.id);
     const viewData = {
-      title: "Build Request Dashboard",
+      title: "Dashboard",
       buildrequest: buildRequestStore.getUserBuildRequest(loggedInUser.id),
-      title: "Estate Dashboard",
-      estate: estateStore.getUserEstates(loggedInUser.id)
+      user: userStore.getUserById(loggedInUser.id),
+      estimate: utility.getUserCurrentEstimate(loggedInUser.id),
+      //currentestimate: userStore.getCurrentestimate(user),
     };
     logger.info("about to render", buildRequestStore.getAllBuildRequests());
     response.render("dashboard", viewData);
   },
 
+
+  
   addBuildRequest(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newBuildRequest = {
@@ -47,26 +52,13 @@ const dashboard = {
     buildRequestStore.removeBuildRequest(buildRequestId);
     response.redirect("/dashboard");
   },
-
-  deleteEstate(request, response) {
-    const estateId = request.params.id;
-    logger.debug(`Deleting Estate ${estateId}`);
-    estateStore.removeEstate(estateId);
-    response.redirect("/dashboard");
-  },
-
-  addEstate(request, response) {
-    const loggedInUser = accounts.getCurrentUser(request);
-    const newEstate = {
-      id: uuid.v1(),
-      userid: loggedInUser.id,
-      title: request.body.title,
-      houses: []
-    };
-    logger.debug("Creating a new Estate", newEstate);
-    estateStore.addEstate(newEstate);
-    response.redirect("/dashboard");
+  
+  getCurrentEstimate (request, response){
+    const buildRequestId = request.params.id;
+    buildRequestStore.length;
+    currentEstimate = buildRequest.estimatedCost[buildRequest.length];
   }
+  
 };
 
 module.exports = dashboard;

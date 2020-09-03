@@ -14,6 +14,15 @@ const buildRequest = {
     };
     response.render("buildrequest", viewData);
   },
+  
+  getCurrentBuildRequest(request) {
+   if (buildRequestStore.getUserBuildRequest(request).length > 0) {
+     const final = buildRequestStore.getUserBuildRequest(request);
+     return buildRequestStore.getBuildRequest(final[final.length - 1].id);
+   }
+   else return null;
+  },
+  
 };
 
 module.exports = buildRequest;

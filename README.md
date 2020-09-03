@@ -1,4 +1,4 @@
-Welcome to the Playlist 3
+Welcome to the James & John OBrien Builder New Home App
 =========================
 
-Version 3 of the Playlist application
+Version 3 of the JJOBrienBuilder application
