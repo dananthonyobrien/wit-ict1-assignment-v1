@@ -5,7 +5,7 @@ const buildRequestStore = require("../models/buildrequest-store");
 const uuid = require("uuid");
 const accounts = require("./accounts.js");
 const userStore = require("../models/user-store");
-const utility = require ("./utility.js");
+const utility = require("./utility.js");
 let currentEstimate;
 
 const dashboard = {
@@ -17,15 +17,13 @@ const dashboard = {
       title: "Dashboard",
       buildrequest: buildRequestStore.getUserBuildRequest(loggedInUser.id),
       user: userStore.getUserById(loggedInUser.id),
-      estimate: utility.getUserCurrentEstimate(loggedInUser.id),
+      estimate: utility.getUserCurrentEstimate(loggedInUser.id)
       //currentestimate: userStore.getCurrentestimate(user),
     };
     logger.info("about to render", buildRequestStore.getAllBuildRequests());
     response.render("dashboard", viewData);
   },
 
-
-  
   addBuildRequest(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newBuildRequest = {
@@ -52,13 +50,12 @@ const dashboard = {
     buildRequestStore.removeBuildRequest(buildRequestId);
     response.redirect("/dashboard");
   },
-  
-  getCurrentEstimate (request, response){
+
+  getCurrentEstimate(request, response) {
     const buildRequestId = request.params.id;
     buildRequestStore.length;
     currentEstimate = buildRequest.estimatedCost[buildRequest.length];
   }
-  
 };
 
 module.exports = dashboard;
