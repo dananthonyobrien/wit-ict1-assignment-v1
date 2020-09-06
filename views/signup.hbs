@@ -1,4 +1,6 @@
+<!--- User Signup Page --->
 {{> welcomemenu id="signup"}}
+
 
 <form class="ui stacked segment form" action="/register" method="POST">
   <h3 class="ui header">Register</h3>
@@ -19,6 +21,10 @@
   <div class="field">
     <label>Password</label>
     <input type="password" name="password">
+  </div>
+  <div class="field">
+    <label>Budget</label>
+    <input type="text" name="budget">
   </div>
   <button class="ui blue submit button">Submit</button>
 </form>

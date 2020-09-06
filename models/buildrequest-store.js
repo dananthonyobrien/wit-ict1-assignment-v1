@@ -4,6 +4,10 @@ const _ = require("lodash");
 const JsonStore = require("./json-store");
 let estimatedCost;
 let overrun;
+let currentCost;
+let currentOverrun;
+let underrun;
+let currentEstimate;
 
 const buildRequestStore = {
   store: new JsonStore("./models/buildrequest-store.json", {
@@ -29,26 +33,35 @@ const buildRequestStore = {
     }
     if (buildRequest.garage === "y") {
       estimatedCost = estimatedCost + 12000;
-    } else if (buildRequest.garage === "n"){
+    } else if (buildRequest.garage === "n") {
       estimatedCost = estimatedCost;
-    } else {estimatedCost = "Input Error"}
+    } else {
+      estimatedCost = "Input Error";
+    }
     if (buildRequest.patio === "y") {
       estimatedCost = estimatedCost + 2000;
-    } else if (buildRequest.garage === "n"){
+    } else if (buildRequest.patio === "n") {
       estimatedCost = estimatedCost;
     } else estimatedCost = "Input Error";
-      buildRequest.estimatedCost = estimatedCost;
-    overrun = Math.round((estimatedCost - buildRequest.budget)/buildRequest.budget);
+    buildRequest.estimatedCost = estimatedCost;
+    overrun = Math.round(
+      ((estimatedCost - buildRequest.budget) / buildRequest.budget) * 100
+    );
     buildRequest.overrun = overrun;
+    //currentCost = buildRequest.estimatedCost[buildRequest.length];
+    //currentCost = this.collection[this.collection.length-1].estimatedCost;
+    //this.collection.currentCost = currentCost;
     this.store.add(this.collection, buildRequest);
     this.store.save();
   },
 
-  currentBuildRequest(id) {
-   const buildRequest = this.getBuildRequest(id);
+  getCurrentCost(buildRequest) {
+    currentCost = buildRequest.estimatedCost[buildRequest.length];
+
+    //currentCost = buildRequestStore()[buildRequestStore.length];
+    //buildRequestStore.buildRequest(id).currentCost = currentCost;
   },
-  
-  
+
   removeBuildRequest(id) {
     const buildRequest = this.getBuildRequest(id);
     this.store.remove(this.collection, buildRequest);
@@ -63,6 +76,8 @@ const buildRequestStore = {
   getUserBuildRequest(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   }
+  
+  
 };
 
 module.exports = buildRequestStore;

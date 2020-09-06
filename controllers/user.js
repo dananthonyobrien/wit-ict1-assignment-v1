@@ -1,4 +1,4 @@
-/*"use strict";
+"use strict";
 
 const logger = require("../utils/logger");
 const userStore = require("../models/user-store");
@@ -16,4 +16,4 @@ const user = {
   },
 };
 
-module.exports = user;*/
+module.exports = user;

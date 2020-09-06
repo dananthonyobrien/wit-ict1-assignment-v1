@@ -62,6 +62,44 @@
       "email": "da@gmail.com",
       "password": "1234",
       "id": "c049c750-e944-11ea-8f3e-37393a3c3956"
+    },
+    {
+      "firstName": "Bill",
+      "lastName": "Buckley",
+      "email": "bb@gmail.com",
+      "password": "1234",
+      "id": "a93c1030-ecab-11ea-860e-211a2a5071a3"
+    },
+    {
+      "firstName": "Gerry",
+      "lastName": "Cinnamon",
+      "email": "gc@gmail.com",
+      "password": "1234",
+      "id": "ae6fb530-ed04-11ea-8f05-070779ad79f7"
+    },
+    {
+      "firstName": "Fiona",
+      "lastName": "O'Leary",
+      "email": "fol@gmail.com",
+      "password": "1234",
+      "budget": "300000",
+      "id": "3f0eb7d0-ed05-11ea-8f05-070779ad79f7"
+    },
+    {
+      "firstName": "Steven",
+      "lastName": "Ahern",
+      "email": "sa@gmail.com",
+      "password": "1234",
+      "budget": "500000",
+      "id": "307e2780-ef69-11ea-be13-930dc6c968c5"
+    },
+    {
+      "firstName": "Frank",
+      "lastName": "Wallis",
+      "email": "fw@gmail.com",
+      "password": "1234",
+      "budget": "500000",
+      "id": "723a2ed0-ef96-11ea-b6e9-91ed000ddc02"
     }
   ]
 }

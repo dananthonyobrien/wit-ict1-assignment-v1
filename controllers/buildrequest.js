@@ -14,6 +14,15 @@ const buildRequest = {
     };
     response.render("buildrequest", viewData);
   },
+  
+  
+  //go through this and understand it.
+  getCurrentBuildRequest(request) {
+    const final = buildRequestStore.getUserBuildRequest(request);
+    if (buildRequestStore.getUserBuildRequest(request).length > 0) {
+      return buildRequestStore.getBuildRequest(final[final.length - 1].id);
+    } else return null;
+  }
 };
 
 module.exports = buildRequest;
